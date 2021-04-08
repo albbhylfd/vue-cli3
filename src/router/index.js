@@ -26,6 +26,12 @@ const routes = [
         name: 'HomeIndex',
         meta: { title: '首页' },
         component: resolve => require(['@/views/HomeIndex.vue'], resolve)
+      },
+      {
+        path: '/table',
+        name: 'Table',
+        meta: { title: '表格' },
+        component: resolve => require(['@/views/Table.vue'], resolve)
       }
     ]
   }

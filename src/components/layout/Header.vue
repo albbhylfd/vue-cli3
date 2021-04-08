@@ -1,9 +1,9 @@
 <template>
   <el-header class="header-container">
-    <p>欢迎您：{{userName}}
+    <span>欢迎您：{{userName}}
     <i @click="setCollapse" :class="isCollapse ? 'el-icon-s-unfold' : 'el-icon-s-fold'"></i>
-    </p>
-    <el-button @click="signOut" v-preventReClick>退出</el-button>
+    </span>
+    <el-button @click="signOut" v-preventReClick class="sign-out-btn">退出</el-button>
   </el-header>
 </template>
 
@@ -38,4 +38,9 @@ export default {
 </script>
 
 <style lang="scss">
+  .header-container{
+    .sign-out-btn{
+      float:right;
+    }
+  }
 </style>
